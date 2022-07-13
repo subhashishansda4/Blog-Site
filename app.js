@@ -10,11 +10,9 @@ app.use(body_parser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/index.html")
 })
 
-
-
-app.listen(3000, function() {
-    console.log("server running on port 3000");
+app.listen(9000, function() {
+    console.log("server running on port 9000");
 })
